@@ -1,0 +1,169 @@
+body, html {
+  height:100%;
+  margin:0;
+  font-size:16px;
+  font-family:"Lato", sans-serif;
+  font-weight:400;
+  line-height:1.8em;
+  color:#666;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-text {
+  font-size:18px;
+}
+
+.embossed {
+    text-shadow: .25px .25px 0px #ffffff,
+    .5px .5px 0px #dadada,
+    .75px .75px 0px #b6b6b6,
+    1px 1px 0px #929292,
+    1.25px 1.25px 0px #6e6e6e,
+    1.5px 1.5px 0px #4a4a4a,
+    2px 2px 0px #262626,
+    2.25px 2.25px 5px black;
+}
+
+.header-nav {
+  background-color: white;
+  min-height: 45px;
+  background-position: top;
+  background-attachment: inherit;
+}
+
+.line {
+  text-decoration: none;
+}
+
+.img1, .img2, .img3, .img4, .services, .features {
+  position:relative;
+  opacity:0.80;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+}
+
+.img1 {
+  background-image:url('https://pbs.twimg.com/media/CbqZZdZUAAADNJR.jpg');
+  min-height:100%;
+}
+
+.img2 {
+  background-image:url('http://www.thestoryoftexas.com/upload/images/100days/artifacts/rollerderby-skates-100days-banner.jpg');
+  min-height:400px;
+}
+
+.img3 {
+  background-image:url('http://3.bp.blogspot.com/-WEnlZ2d3a9c/TtgpSONgoWI/AAAAAAAAL5I/yXTluy47Vns/s1600/rollerderbyDSC_7226-tiltshift.jpg');
+  min-height:400px;
+}
+
+.img4 {
+  background-image:url('http://www.texashighways.com/images/TXRollerDerby.jpg');
+  min-height:100%;
+}
+
+.services {
+  background-color: white;
+  min-height:400px;
+}
+
+.features {
+  background-color: white;
+  min-height:600px;
+  padding-bottom: 75px;
+}
+
+.feature-row {
+  padding-top: 25px;
+}
+
+.section {
+  text-align:center;
+  padding: 80px;
+}
+
+.lightbg {
+  background-color:#f4f4f4;
+  color:#666;
+}
+
+.darkbg {
+  background-color:#282e34;
+  color:#ddd;
+}
+
+.ptext, .fptext {
+  position:absolute;
+  top: 45%;
+  width:100%;
+  text-align:center;
+  color:#000;
+  font-size:27px;
+  letter-spacing:8px;
+  text-transform:uppercase;
+}
+
+.btext {
+  color:#33FF33;
+  width:100%;
+  font-size:25px;
+  top:10%;
+}
+
+.dtext {
+  position:absolute;
+  top:88%;
+  width: 100%;
+  text-align: center;
+  color:#000;
+}
+
+.ftext {
+  padding-top: 10px;
+  font-size: 18px;
+  text-align: center;
+  color:#000;
+  letter-spacing:4px;
+}
+
+.fsmtext {
+  font-size: 14px;
+  text-align: center;
+  color:#000;
+  letter-spacing:1px;
+}
+
+.fptext, .features {
+  top: 10%;
+}
+
+.ptext .border {
+  background-color:#111;
+  color:#fff;
+  padding:20px;
+}
+
+.trans {
+  background-color:transparent;
+}
+
+.navbar-nav {
+  float: none;
+}
+
+.navbar-nav-left {
+  float: left;
+}
+
+.navbar-nav-right {
+  float: right;
+}
+
+@media(max-width:568px) {
+  .img1, .img2, .img3{
+    background-attachment:scroll;
+  }
+}
