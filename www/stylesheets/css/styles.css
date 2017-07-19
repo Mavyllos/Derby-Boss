@@ -72,7 +72,7 @@ body, html {
 
 .features {
   background-color: white;
-  min-height:600px;
+  min-height:100%;
   padding-bottom: 75px;
 }
 
@@ -166,4 +166,55 @@ body, html {
   .img1, .img2, .img3{
     background-attachment:scroll;
   }
+}
+
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 140px;
+  background-color: #f5f5f5;
+}
+
+#register-league {
+  float: right;
+  /*position: absolute;
+  height: 35px;
+  width: 65px;
+  bottom: -10px;
+  right: 19px;*/
+}
+
+#register-admin {
+  float: right;
+  /*position: absolute;
+  height: 35px;
+  width: 65px;
+  bottom: 10px;
+  right: 19px;*/
+}
+
+.custom-select {
+  display: block;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.div, .checkbox, .checkbox-inline {
+  margin-top: 0px;
+}
+
+.checkbox label {
+  padding-left: 5px;
+  padding-right: 20px;
 }

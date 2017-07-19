@@ -1,0 +1,317 @@
+<ui-view="register-admin">
+  <div class="header-nav">
+    <header class="header navbar-fixed-top">
+      <nav class="navbar" role="navigation">
+        <div class="container-fuild">
+          <div class="collapse navbar-collapse nav-collapse navbar-inverse">
+            <div class="menu-container">
+              <ul class="nav navbar-nav navbar-nav-left">
+                <li>
+                  <a class="nav-item-child nav-item-hover" href="/">
+                    < Back to Home</a>
+                </li>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </div>
+  <!--End navbar-->
+
+  <!-- Registration Form - Admin -->
+
+  <div class="container">
+    <h1 class="well" align="center">Register an Administrator for {LEAGUE NAME}</h1>
+    <div class="col-lg-12 well">
+      <div class="row">
+        <form>
+          <div class="col-sm-12">
+            <div class="row">
+              <div class="col-sm-6 form-group">
+                <label>First Name: </label>
+                <input type="text" placeholder="Enter First Name" class="form-control">
+              </div>
+              <div class="col-sm-6 form-group">
+                <label>Last Name: </label>
+                <input type="text" placeholder="Enter Last Name" class="form-control">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6 form-group">
+                <label>Derby Name: </label>
+                <input type="text" placeholder="Enter Derby Name" class="form-control">
+              </div>
+              <div class="col-sm-6 form-group">
+                <label>Jersey Number: </label>
+                <input type="text" placeholder="Enter Jersey Number" class="form-control">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12 form-group">
+                <p><b>League Role(s): </b></p>
+                <div>
+                  <div class="checkbox checkbox-inline">
+                    <input type="checkbox" id="admin" value="admin">
+                    <label for="admin" class="checkbox"> Admin </label>
+                  </div>
+                  <div class="checkbox checkbox-inline">
+                    <input type="checkbox" id="coach" value="coach">
+                    <label for="coach" class="checkbox"> Coach </label>
+                  </div>
+                  <div class="checkbox checkbox-inline">
+                    <input type="checkbox" id="skater" value="skater">
+                    <label for="skater" class="checkbox"> Skater </label>
+                  </div>
+                  <div class="checkbox checkbox-inline">
+                    <input type="checkbox" id="referee" value="referee">
+                    <label for="referee" class="checkbox"> Referee </label>
+                  </div>
+                  <div class="checkbox checkbox-inline">
+                    <input type="checkbox" id="nso" value="nso">
+                    <label for="nso" class="checkbox"> NSO </label>
+                  </div>
+                  <div class="checkbox checkbox-inline">
+                    <input type="checkbox" id="volunteer" value="volunteer">
+                    <label for="volunteer" class="checkbox"> Volunteer </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-6 form-group">
+                <label>Phone Number</label>
+                <input type="text" placeholder="Enter Phone Number" class="form-control">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6 form-group">
+                <label>Email Address</label>
+                <input type="text" placeholder="Enter Email Address" class="form-control">
+              </div>
+              <div class="col-sm-6 form-group">
+                <label>Confirm Email Address</label>
+                <input type="text" placeholder="Re-enter Email Address" class="form-control">
+              </div>
+              <div class="col-sm-6 form-group">
+                <label>Password</label>
+                <input type="text" placeholder="Enter Password" class="form-control">
+              </div>
+              <div class="col-sm-6 form-group">
+                <label>Confirm Email Address</label>
+                <input type="text" placeholder="Re-enter Password" class="form-control">
+              </div>
+            </div>
+
+            <!-- Address Information - show on click -->
+
+            <div>
+              <a href="#">Address Information</a>
+            </div>
+
+            <div class="col-lg-12 well">
+              <div class="row">
+                <div class="col-sm-8 form-group">
+                  <label>Address Line 1</label>
+                  <input type="text" placeholder="Enter Address Line 1" class="form-control">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-8 form-group">
+                  <label>Address Line 2</label>
+                  <input type="text" placeholder="Enter Address Line 2" class="form-control">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-4 form-group">
+                  <label>City</label>
+                  <input type="text" placeholder="Enter City" class="form-control">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-4 form-group">
+                  <label>State</label>
+                  <input type="text" placeholder="Enter State" class="form-control">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-4 form-group">
+                  <label>Zip</label>
+                  <input type="text" placeholder="Enter Zip Code" class="form-control">
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <!-- Emergency Information - show on click -->
+
+      <div>
+        <a href="#">Emergency Information</a>
+      </div>
+
+      <div class="col-lg-12 well">
+        <div class="row">
+          <div class="col-sm-8 form-group">
+            <label>Emergency Contact Name: </label>
+            <input type="text" placeholder="Enter Emergency Contact Name" class="form-control">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-8 form-group">
+            <label>Emergency Contact Number: </label>
+            <input type="text" placeholder="Enter Emergency Contact Number" class="form-control">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 form-group">
+            <p><b>Has Personal Health Isurance: </b></p>
+            <div>
+              <div class="checkbox checkbox-inline">
+                <input type="checkbox" id="hins-yes" value="hins-yes">
+                <label for="hins-yes" class="checkbox"> Yes </label>
+              </div>
+              <div class="checkbox checkbox-inline">
+                <input type="checkbox" id="hins-no" value="hins-no">
+                <label for="hins-no" class="checkbox"> No </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-8 form-group">
+            <label>Insurance Provider Name: </label>
+            <input type="text" placeholder="Enter Insurance Provider Name" class="form-control">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-8 form-group">
+            <label>Insurance Policy Number: </label>
+            <input type="text" placeholder="Enter Insurance Policy Number" class="form-control">
+          </div>
+        </div>
+      </div>
+
+          <!-- Skate Requirements - show on click -->
+
+          <div>
+            <a href="#">Skate Requirements</a>
+          </div>
+
+          <div class="col-lg-12 well">
+            <div class="row">
+              <div class="col-sm-12 form-group">
+                <p><b>Skate Insurance Required: </b></p>
+                <div>
+                  <div class="checkbox checkbox-inline">
+                    <input type="checkbox" id="sins-yes" value="sins-yes">
+                    <label for="sins-yes" class="checkbox"> Yes </label>
+                  </div>
+                  <div class="checkbox checkbox-inline">
+                    <input type="checkbox" id="sins-no" value="sins-no">
+                    <label for="sins-no" class="checkbox"> No </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-8 form-group">
+                <label>Policy Number: </label>
+                <input type="text" placeholder="Enter Policy Number" class="form-control">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-4 form-group">
+                <label>Issue Date: (Format YYYY/MM/DD)</label>
+                <input type="text" placeholder="Enter Issue Date" class="form-control">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-4 form-group">
+                <label>Expiration Date: (Format YYYY/MM/DD)</label>
+                <input type="text" placeholder="Enter Expiration Date" class="form-control">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-12 form-group">
+                <p><b>Eligible to skate: </b></p>
+                <div>
+                  <div class="checkbox checkbox-inline">
+                    <input type="checkbox" id="elig-yes" value="elig-yes">
+                    <label for="sins-yes" class="checkbox"> Yes </label>
+                  </div>
+                  <div class="checkbox checkbox-inline">
+                    <input type="checkbox" id="elig-no" value="elig-no">
+                    <label for="elig-no" class="checkbox"> No </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+      <!-- End of expanding forms/wells -->
+          <button id="register-admin" type="button" class="btn  btn-primary">Submit</button>
+          </div>
+        </form>
+    <!-- End of form -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Registration Form Ends -->
+
+  <!-- Footer Starts -->
+  <div class="footer">
+    <div id="contact">
+      <div class="bg-color-sky-ligh">
+        <div class="container content-lg">
+          <div class="row">
+            <div class="col-sm-3 sm-margin-b-30">
+              <div class="text-right sm-text-left">
+                <h2 class="margin-b-0">Contact Us:</h2>
+              </div>
+              <div class="text-right md-text-left">
+              </div>
+            </div>
+            <div class="col-sm-8 col-sm-offset-1">
+              <div class="row">
+                <div class="col-md-3 col-xs-6 md-margin-b-30">
+                  <h5>By Mail: </h5>
+                  <p>
+                    111 S. Jackson St. Seattle, WA, 98104
+                  </p>
+                </div>
+                <div class="col-md-3 col-xs-6 md-margin-b-30">
+                  <h5>By Phone: </h5>
+                  <a href="tel: 480-703-5525" style="text-decoration:none">480-703-5525</a>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                  <h5>By Email: </h5>
+                  <a href="mailto:#" style="text-decoration:none">DerbyBoss@gmail.com</a>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                  <h5>On Social Media</h5>
+                  <p>
+                    <a href="#"><i class="fa fa-facebook"></a></i>
+                    <a href="#">  <i class="fa fa-instagram"></a></i>
+                    <a href="#"> <i class="fa fa-linkedin"></a></i>
+                    <a href="#"><i class="fa fa-twitter"></a></i>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xs-12 text-right sm-text-left" align="left">
+      <p class="margin-b-0"><a class="fweight-600"></a> Copyright © <a class="fweight-700" href="https://www.linkedin.com/in/summerbarclay/">Summer Barclay</a> 2017. All right reserved.</p>
+    </div>
+  </div>
+  <!-- End Footer -->
+  </ui-view>

@@ -1,0 +1,150 @@
+<ui-view="register-league">
+  <div class="header-nav">
+    <header class="header navbar-fixed-top">
+      <nav class="navbar" role="navigation">
+        <div class="container-fuild">
+          <div class="collapse navbar-collapse nav-collapse navbar-inverse">
+            <div class="menu-container">
+              <ul class="nav navbar-nav navbar-nav-left">
+                <li>
+                  <a class="nav-item-child nav-item-hover" href="/">
+                    < Back to Home</a>
+                </li>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </div>
+  <!--End navbar-->
+
+  <!-- Registration Form - League -->
+  <div class="container">
+    <h1 class="well" align="center">Register a New League</h1>
+    <div class="col-lg-12 well">
+      <div class="row">
+        <form>
+          <div class="col-sm-12">
+            <div class="row">
+              <div class="col-sm-12 form-group">
+                <label>League Name: </label>
+                <input type="text" placeholder="Enter League Name" class="form-control">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-8 form-group">
+                <label>Address Line 1</label>
+                <input type="text" placeholder="Enter Address Line 1" class="form-control">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-8 form-group">
+                <label>Address Line 2</label>
+                <input type="text" placeholder="Enter Address Line 2" class="form-control">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-4 form-group">
+                <label>City: </label>
+                <input type="text" placeholder="Enter City" class="form-control">
+              </div>
+              <div class="col-sm-4 form-group">
+                <label>State: </label>
+                <input type="text" placeholder="Enter State" class="form-control">
+              </div>
+              <div class="col-sm-4 form-group">
+                <label>Zip: </label>
+                <input type="text" placeholder="Enter Zip Code" class="form-control">
+              </div>
+              <div class="col-sm-6">
+                <label>Membership(s): </label>
+                <div>
+                  <select class="custom-select">
+                    <option selected>Select Membership(s): &nbsp;&nbsp;</option>
+                    <option value="BRSF">British Roller Sports Federation</option>
+                    <option value="JRDA">Junior Roller Derby Association</option>
+                    <option value="MRDA">Men's Roller Derby Association </option>
+                    <option value="MADE">Modern Athletic Derby Endeavor</option>
+                    <option value="NS">Norges Skøyteforbund</option>
+                    <option value="OSDA">Old School Derby Association</option>
+                    <option value="RR">Renegade Rollergirls</option>
+                    <option value="RDAC">Roller Derby Association of Canada</option>
+                    <option value="RDCL">Roller Derby Coalition of Leagues </option>
+                    <option value="RSC">Roller Sports Canada</option>
+                    <option value="SA">Skate Australia</option>
+                    <option value="SS">Svenska Skridskoförbundet</option>
+                    <option value="UKRDA">United Kingdom Roller Derby Association </option>
+                    <option value="USARS">USA Roller Sports</option>
+                    <option value="WFTDA">Women's Flat Track Derby Association </option>
+                    <option value="WORD">World Organization of Roller Derby </option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-sm-12">
+                <p align="right">
+                  Click "Next" to register this league and create an adminstrator account.
+                  <br>
+                  <br>
+                </p>
+                <button id="register-league" type="submit" class="btn  btn-primary">Next</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- End of Registration Form -->
+
+  <!-- Footer Starts -->
+  <div class="footer">
+    <div id="contact">
+      <div class="bg-color-sky-ligh">
+        <div class="container content-lg">
+          <div class="row">
+            <div class="col-sm-3 sm-margin-b-30">
+              <div class="text-right sm-text-left">
+                <h2 class="margin-b-0">Contact Us:</h2>
+              </div>
+              <div class="text-right md-text-left">
+              </div>
+            </div>
+            <div class="col-sm-8 col-sm-offset-1">
+              <div class="row">
+                <div class="col-md-3 col-xs-6 md-margin-b-30">
+                  <h5>By Mail: </h5>
+                  <p>
+                    111 S. Jackson St. Seattle, WA, 98104
+                  </p>
+                </div>
+                <div class="col-md-3 col-xs-6 md-margin-b-30">
+                  <h5>By Phone: </h5>
+                  <a href="tel: 480-703-5525" style="text-decoration:none">480-703-5525</a>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                  <h5>By Email: </h5>
+                  <a href="mailto:#" style="text-decoration:none">DerbyBoss@gmail.com</a>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                  <h5>On Social Media</h5>
+                  <p>
+                    <a href="#"><i class="fa fa-facebook"></a></i>
+                    <a href="#">  <i class="fa fa-instagram"></a></i>
+                    <a href="#"> <i class="fa fa-linkedin"></a></i>
+                    <a href="#"><i class="fa fa-twitter"></a></i>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xs-12 text-right sm-text-left" align="left">
+      <p class="margin-b-0"><a class="fweight-600"></a> Copyright © <a class="fweight-700" href="https://www.linkedin.com/in/summerbarclay/">Summer Barclay</a> 2017. All right reserved.</p>
+    </div>
+  </div>
+  <!-- End Footer -->
+  </ui-view>

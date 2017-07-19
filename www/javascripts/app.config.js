@@ -16,9 +16,14 @@ function config($stateProvider, $urlRouterProvider, $locationProvider) {
       component: "landing"
     })
     .state({
-      name: 'register',
-      url: '/register',
-      component: "register"
+      name: 'registerLeague',
+      url: '/register-league',
+      component: "registerLeague"
+    })
+    .state({
+      name: 'registerAdmin',
+      url: '/register-admin',
+      component: "registerAdmin"
     });
 
 
