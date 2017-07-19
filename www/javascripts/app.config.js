@@ -16,6 +16,11 @@ function config($stateProvider, $urlRouterProvider, $locationProvider) {
       component: "landing"
     })
     .state({
+      name: 'login',
+      url: '/login',
+      component: "login"
+    })
+    .state({
       name: 'registerLeague',
       url: '/register-league',
       component: "registerLeague"
@@ -24,6 +29,51 @@ function config($stateProvider, $urlRouterProvider, $locationProvider) {
       name: 'registerAdmin',
       url: '/register-admin',
       component: "registerAdmin"
+    })
+    .state({
+      name: 'dashboard',
+      url: '/dashboard',
+      component: "dashboard"
+    })
+    .state({
+      name: 'addMember',
+      url: '/add-member',
+      component: "addMember"
+    })
+    .state({
+      name: 'allMembers',
+      url: '/all-members',
+      component: "allMembers"
+    })
+    .state({
+      name: 'editMember',
+      url: '/edit-member',
+      component: "editMember"
+    })
+    .state({
+      name: 'viewMember',
+      url: '/view-member',
+      component: "viewMember"
+    })
+    .state({
+      name: 'addTeam',
+      url: '/add-team',
+      component: "addTeam"
+    })
+    .state({
+      name: 'allTeams',
+      url: '/all-teams',
+      component: "allTeams"
+    })
+    .state({
+      name: 'editTeam',
+      url: '/edit-team',
+      component: "editTeam"
+    })
+    .state({
+      name: 'viewTeam',
+      url: '/view-team',
+      component: "viewTeam"
     });
 
 

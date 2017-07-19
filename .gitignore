@@ -1,3 +1,5 @@
 node_modules
 
 landing2.html
+
+*.jshintrc

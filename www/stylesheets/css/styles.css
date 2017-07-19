@@ -65,6 +65,12 @@ body, html {
   min-height:100%;
 }
 
+.img5 {
+  background-image:url('http://www.thestoryoftexas.com/upload/images/100days/artifacts/rollerderby-skates-100days-banner.jpg');
+  min-height:150px;
+  background-size: cover;
+}
+
 .services {
   background-color: white;
   min-height:400px;
@@ -140,7 +146,7 @@ body, html {
   top: 10%;
 }
 
-.ptext .border {
+.ptext, .dash-text, .border {
   background-color:#111;
   color:#fff;
   padding:20px;
@@ -162,6 +168,14 @@ body, html {
   float: right;
 }
 
+.center-nav {
+  display: flex;
+}
+
+.navbar-nav-center {
+  align-content: space-between;
+}
+
 @media(max-width:568px) {
   .img1, .img2, .img3{
     background-attachment:scroll;
@@ -169,6 +183,14 @@ body, html {
 }
 
 .footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 140px;
+  background-color: #f5f5f5;
+}
+
+.footer-dash {
   position: relative;
   bottom: 0;
   width: 100%;
@@ -217,4 +239,17 @@ body, html {
 .checkbox label {
   padding-left: 5px;
   padding-right: 20px;
+}
+
+.navbar-default .navbar-nav > li.dropdown:hover > a,
+.navbar-default .navbar-nav > li.dropdown:hover > a:hover,
+.navbar-default .navbar-nav > li.dropdown:hover > a:focus {
+    background-color: rgb(231, 231, 231);
+    color: rgb(85, 85, 85);
+}
+li.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+.content {
+  padding-top: 200px;
 }
