@@ -262,3 +262,31 @@ li.dropdown:hover > .dropdown-menu {
 .register {
   padding-top: 100px;
 }
+
+.margin-grid {
+    margin-right:5px;
+    maring-left:5px;
+}
+
+/*table - dashboard*/
+.table-fixheader {
+    position: relative;
+    padding-top: 40px;
+}
+.table-fixheader>div {
+    height:340px;
+    overflow-y:auto;
+}
+.table-fixheader thead{
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+.table-fixheader thead tr{
+    position: absolute;
+    width: 100%;
+}
+.table-fixheader thead tr th{
+    display:inline-block;
+}
+/*table-dashboard*/
