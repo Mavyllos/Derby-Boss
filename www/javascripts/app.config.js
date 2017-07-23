@@ -36,6 +36,11 @@ function config($stateProvider, $urlRouterProvider, $locationProvider) {
       component: "dashboard"
     })
     .state({
+      name: 'editLeague',
+      url: '/edit-league',
+      component: "editLeague"
+    })
+    .state({
       name: 'addMember',
       url: '/add-member',
       component: "addMember"
