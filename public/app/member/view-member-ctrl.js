@@ -2,8 +2,8 @@
   'use strict';
 
   angular.module("app")
-  .component('login', {
-    templateUrl: '/www/app/login/login.html',
+  .component('viewMember', {
+    templateUrl: '/public/app/member/view-member.html',
 
     controller: function () {
     },

@@ -3,7 +3,7 @@
 
   angular.module("app")
   .component('dashboard', {
-    templateUrl: '/www/app/dashboard/dashboard.html',
+    templateUrl: '/public/app/dashboard/dashboard.html',
 
     controller: controller
   });

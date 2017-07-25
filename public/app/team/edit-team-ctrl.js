@@ -2,8 +2,8 @@
   'use strict';
 
   angular.module("app")
-  .component('navheader', {
-    templateUrl: '/www/app/navigation/header.html',
+  .component('editTeam', {
+    templateUrl: '/public/app/team/edit-team.html',
 
     controller: function () {
     },

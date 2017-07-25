@@ -2,8 +2,8 @@
   'use strict';
 
   angular.module("app")
-  .component('navfooter', {
-    templateUrl: '/www/app/navigation/footer.html',
+  .component('login', {
+    templateUrl: '/public/app/login/login.html',
 
     controller: function () {
     },

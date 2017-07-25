@@ -2,8 +2,8 @@
   'use strict';
 
   angular.module("app")
-  .component('editTeam', {
-    templateUrl: '/www/app/team/edit-team.html',
+  .component('registerLeague', {
+    templateUrl: '/public/app/register/register-league.html',
 
     controller: function () {
     },
