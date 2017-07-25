@@ -3,7 +3,7 @@
 
   angular.module("app")
   .component('addMember', {
-    templateUrl: '/public/app/member/add-member.html',
+    templateUrl: '/app/member/add-member.html',
 
     controller: controller
   });

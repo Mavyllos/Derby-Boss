@@ -3,7 +3,7 @@
 
   angular.module("app")
   .component('navheader', {
-    templateUrl: '/public/app/navigation/header.html',
+    templateUrl: '/app/navigation/header.html',
 
     controller: function () {
     },

@@ -3,7 +3,7 @@
 
   angular.module("app")
   .component('landing', {
-    templateUrl: '/public/app/landing/landing.html',
+    templateUrl: 'app/landing/landing.html',
 
     controller: function () {
     },

@@ -3,7 +3,7 @@
 
   angular.module("app")
   .component('editLeague', {
-    templateUrl: '/public/app/league/edit-league.html',
+    templateUrl: '/app/league/edit-league.html',
 
     controller: function () {
     },

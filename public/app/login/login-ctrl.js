@@ -3,7 +3,7 @@
 
   angular.module("app")
   .component('login', {
-    templateUrl: '/public/app/login/login.html',
+    templateUrl: '/app/login/login.html',
 
     controller: function () {
     },

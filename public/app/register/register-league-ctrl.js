@@ -3,7 +3,7 @@
 
   angular.module("app")
   .component('registerLeague', {
-    templateUrl: '/public/app/register/register-league.html',
+    templateUrl: '/app/register/register-league.html',
 
     controller: function () {
     },
