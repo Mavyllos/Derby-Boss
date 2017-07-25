@@ -5,16 +5,20 @@
 <div class="container content">
   <div class="row">
     <div class="col-xs-12 col-sm-12 col-lg-12" style="padding-top:30px;">
-      <div class="panel panel-info profile-bkg">
+      <div class="panel panel-info profile-bkg" ng-repeat="member in $ctrl.members">
         <div class="panel-heading profile-header">
-          <h2 class="panel-title">Ellen "Babe Ruthless" Page<A href="/edit-member" style="float:right; text-decoration:underline;">Edit Profile</A></h2>
+          <h2 class="panel-title">
+              <h4><b>{{member.first_name}} "{{member.derby_name}}" {{member.last_name}}</b>
+              <a href="/edit-member" style="float:right; text-decoration:underline;">Edit Profile</a>
+              </h4>
+          </h2>
         </div>
         <div class="panel-body">
           <div class="row">
 
           <!-- Profile Image -->
             <div class="col-md-3 col-lg-3 " align="center">
-              <img alt="User Pic" src="http://rs996.pbsrc.com/albums/af84/Angelina_Paredes/Ellen%20Page/EllenPageWhipIt_event_main.jpg~c200" class="img-thumbnail img-responsive">
+              <img alt="User Pic" src="{{member.profile_img}}" class="img-thumbnail img-responsive">
             </div>
 
             <!-- Contact Information -->
@@ -22,15 +26,15 @@
               <div class="well">
                 <table class="table table-user-information">
                   <tbody>
-                    <th>Contact Information - </th>
+                    <th>Contact Information: </th>
                     <tr>
                       <td>Jersey Number:</td>
-                      <td>22</td>
+                      <td>{{member.jersey_number}}</td>
                     </tr>
                     <tr>
                       <td>League Role(s):</td>
                       <td>
-                        <p>Skater</p>
+                        <p ng-repeat="role in member.role.type">{{role}}</p>
                       </td>
                     </tr>
                     <tr>
@@ -41,19 +45,19 @@
                     </tr>
                     <tr>
                       <td>Phone Number:</td>
-                      <td>(555) 555-4321</td>
+                      <td>{{member.phone}}</td>
                     </tr>
                     <tr>
                       <td>Home Address:</td>
                       <td>
-                        <p>23 Brook Rd.</p>
-                        <p>Suite 236</p>
-                        <p>Lititz, PA, 17543</p>
+                        <p>{{member.line_1}}</p>
+                        <p>{{member.line_2}}</p>
+                        <p>{{member.city}}, {{member.state}} {{member.zip}}</p>
                       </td>
                     </tr>
                     <tr>
                       <td>Email</td>
-                      <td><a href="mailto:BabeRuthless@fakemail.com">BabeRuthless@fakemail.com</a></td>
+                      <td><a href="mailto:{{member.email}}">{{member.email}}</a></td>
                     </tr>
                   </tbody>
                 </table>
@@ -67,26 +71,26 @@
               <div class="well">
                 <table class="table table-user-information">
                   <tbody>
-                    <th>Emergency Information - </th>
+                    <th>Emergency Information: </th>
                     <tr>
                       <td>Emergency Contact Name:</td>
-                      <td>Mary Smith</td>
+                      <td>{{member.contact_name}}</td>
                     </tr>
                     <tr>
                       <td>Emergency Contact Number:</td>
-                      <td>555-555-5555</td>
+                      <td>{{member.contact_number}}</td>
                     </tr>
                     <tr>
                       <td>Has Health Insurance:</td>
-                      <td>Yes</td>
+                      <td>{{member.insured?'Yes':'No'}}</td>
                     </tr>
                     <tr>
                     <td>Insurance Provider Name:</td>
-                      <td>Blue Cross BLue Shield of GA</td>
+                      <td>{{member.emer_provider_name}}</td>
                     </tr>
                     <tr>
                       <td>Insurance Policy Number:</td>
-                      <td>B123456789</td>
+                      <td>{{member.emer_policy_number}}</td>
                     </tr>
                   </tbody>
                 </table>
@@ -100,28 +104,28 @@
               <div class="well">
                 <table class="table table-user-information">
                   <tbody>
-                    <th>Skate Requirements - </th>
+                    <th>Skate Requirements: </th>
                     <tr>
                       <td>Skate Insurance Required:</td>
-                      <td>Yes</td>
+                      <td>{{member.ins_required?'Yes':'No'}}</td>
                     </tr>
                     <tr>
                       <td>Policy Number:</td>
                       <td>
-                        <p>SD1237876545</p>
+                        <p>{{member.req_policy_number}}</p>
                       </td>
                     </tr>
                     <tr>
                       <td>Issue Date:</td>
-                      <td>2016/12/20</td>
+                      <td>{{member.issue_date | date:'MM/dd/yyyy'}}</td>
                     </tr>
                     <tr>
                     <td>Expiration Date:</td>
-                      <td>2017/12/20</td>
+                      <td>{{member.expires | date:'MM/dd/yyyy'}}</td>
                     </tr>
                     <tr>
                       <td>Eligible to Skate:</td>
-                      <td>Yes</td>
+                      <td>{{member.eligibility?'Yes':'No'}}</td>
                     </tr>
                   </tbody>
                 </table>

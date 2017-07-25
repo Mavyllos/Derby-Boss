@@ -57,7 +57,7 @@ function config($stateProvider, $urlRouterProvider, $locationProvider) {
     })
     .state({
       name: 'viewMember',
-      url: '/view-member',
+      url: '/view-member/{id}',
       component: "viewMember"
     })
     .state({

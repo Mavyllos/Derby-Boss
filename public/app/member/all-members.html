@@ -76,7 +76,7 @@
                       <th>{{member.eligibility?'Yes':'No'}}</th>
                       <td>{{member.expires | date:'MM/dd/yyyy'}}</td>
                       <td>
-                        <a class="btn btn-primary" ui-sref="viewMember({id: member.id})">
+                        <a class="btn btn-primary" ui-sref="viewMember({id: member.member_id})">
                       			<i class="fa fa-user"></i>
                       		</a>
                         <a class="btn btn-info" ui-sref="editMember({id: member.id})">
