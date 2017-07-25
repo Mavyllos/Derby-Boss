@@ -100,7 +100,7 @@
                   </tr>
                 </thead>
   		          <tbody>
-                  <tr ng-repeat="member in $ctrl.members">
+                  <tr ng-repeat="member in $ctrl.members | orderBy: 'expires'">
                     <td>{{member.first_name}}</td>
                     <td>{{member.last_name}}</td>
                     <td>{{member.expires | date:'MM/dd/yyyy'}}</td>
@@ -127,25 +127,10 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Juliette</td>
-                    <td>Lewis</td>
-                    <td>09/20/2017</td>
-                  </tr>
-                  <tr>
-                    <td>Ellen</td>
-                    <td>Page</td>
-                    <td>11/13/2017</td>
-                  </tr>
-                  <tr>
-                    <td>Drew</td>
-                    <td>Barrymore</td>
-                    <td>12/09/2017</td>
-                  </tr>
-                  <tr>
-                    <td>Zoe</td>
-                    <td>Bell</td>
-                    <td>12/27/2017</td>
+                  <tr ng-repeat="member in $ctrl.members | orderBy: 'dues_paid'">
+                    <td>{{member.first_name}}</td>
+                    <td>{{member.last_name}}</td>
+                    <td>{{member.dues_paid | date:'MM/dd/yyyy'}}</td>
                   </tr>
                 </tbody>
               </table>

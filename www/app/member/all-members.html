@@ -19,44 +19,22 @@
                       <th>First Name</th>
                       <th>Last Name</th>
                       <th>Derby Name</th>
-                      <th>Role(s)</th>
-                      <th>Status</th>
+                      <!-- <th>Role(s)</th> -->
+                      <th>Eligible?</th>
                       <th>Insurance Expires</th>
                       <th>Actions</th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
-                      <td>Ellen</td>
-                      <td>Page</td>
-                      <td>Babe Ruthless</td>
-                      <td>
-                        <p>Skater</p>
-                      </td>
-                      <td>Eligible</td>
-                      <td>12/20/2017</td>
-                      <td>
-                        <a class="btn btn-info" href="table.html#">
-                      			<i class="fa fa-edit "></i>
-                      		</a>
-                        <a class="btn btn-danger" href="table.html#">
-                      			<i class="fa fa-trash-o "></i>
-                      		</a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Juliette</td>
-                      <td>Lewis</td>
-                      <td>Iron Maven</td>
-                      <td>
-                        <p>Admin</p>
-                        <hr>
-                        <p>Coach</p>
-                        <hr>
-                        <p>Skater</p>
-                      </td>
-                      <td>Eligible</td>
-                      <td>12/20/2017</td>
+                    <tr ng-repeat="member in $ctrl.members | orderBy: 'last_name'">
+                      <td>{{member.first_name}}</td>
+                      <td>{{member.last_name}}</td>
+                      <td>{{member.derby_name}}</td>
+                      <!-- <td>
+                        <p>{{member.role}}</p>
+                      </td> -->
+                      <th>{{member.eligibility?'Yes':'No'}}</th>
+                      <td>{{member.expires | date:'MM/dd/yyyy'}}</td>
                       <td>
                         <a class="btn btn-info" href="table.html#">
                       			<i class="fa fa-edit "></i>
@@ -64,156 +42,6 @@
                         <a class="btn btn-danger" href="table.html#">
                       			<i class="fa fa-trash-o "></i>
                       		</a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Drew</td>
-                      <td>Barrymore</td>
-                      <td>Smashley Simpson</td>
-                      <td>
-                        <p>Skater</p>
-                      </td>
-                      <td>Eligible</td>
-                      <td>12/20/2017</td>
-                      <td>
-                        <a class="btn btn-info" href="table.html#">
-                            <i class="fa fa-edit "></i>
-                          </a>
-                        <a class="btn btn-danger" href="table.html#">
-                            <i class="fa fa-trash-o "></i>
-                          </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Zoe</td>
-                      <td>Bell</td>
-                      <td>Bloody Holly</td>
-                      <td>
-                        <p>Skater</p>
-                      </td>
-                      <td>Eligible</td>
-                      <td>12/20/2017</td>
-                      <td>
-                        <a class="btn btn-info" href="table.html#">
-                            <i class="fa fa-edit "></i>
-                          </a>
-                        <a class="btn btn-danger" href="table.html#">
-                            <i class="fa fa-trash-o "></i>
-                          </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Ari</td>
-                      <td>Graynor</td>
-                      <td>Eva Destruction</td>
-                      <td>
-                        <p>Admin</p>
-                        <p>Coach</p>
-                        <p>Skater</p>
-                      </td>
-                      <td>Eligible</td>
-                      <td>12/20/2017</td>
-                      <td>
-                        <a class="btn btn-info" href="table.html#">
-                            <i class="fa fa-edit "></i>
-                          </a>
-                        <a class="btn btn-danger" href="table.html#">
-                            <i class="fa fa-trash-o "></i>
-                          </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Ellen</td>
-                      <td>Page</td>
-                      <td>Babe Ruthless</td>
-                      <td>
-                        <p>Skater</p>
-                      </td>
-                      <td>Eligible</td>
-                      <td>12/20/2017</td>
-                      <td>
-                        <a class="btn btn-info" href="table.html#">
-                            <i class="fa fa-edit "></i>
-                          </a>
-                        <a class="btn btn-danger" href="table.html#">
-                            <i class="fa fa-trash-o "></i>
-                          </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Juliette</td>
-                      <td>Lewis</td>
-                      <td>Iron Maven</td>
-                      <td>
-                        <p>Admin</p>
-                        <p>Coach</p>
-                        <p>Skater</p>
-                      </td>
-                      <td>Eligible</td>
-                      <td>12/20/2017</td>
-                      <td>
-                        <a class="btn btn-info" href="table.html#">
-                            <i class="fa fa-edit "></i>
-                          </a>
-                        <a class="btn btn-danger" href="table.html#">
-                            <i class="fa fa-trash-o "></i>
-                          </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Drew</td>
-                      <td>Barrymore</td>
-                      <td>Smashley Simpson</td>
-                      <td>
-                        <p>Skater</p>
-                      </td>
-                      <td>Eligible</td>
-                      <td>12/20/2017</td>
-                      <td>
-                        <a class="btn btn-info" href="table.html#">
-                            <i class="fa fa-edit "></i>
-                          </a>
-                        <a class="btn btn-danger" href="table.html#">
-                            <i class="fa fa-trash-o "></i>
-                          </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Zoe</td>
-                      <td>Bell</td>
-                      <td>Bloody Holly</td>
-                      <td>
-                        <p>Skater</p>
-                      </td>
-                      <td>Eligible</td>
-                      <td>12/20/2017</td>
-                      <td>
-                        <a class="btn btn-info" href="table.html#">
-                            <i class="fa fa-edit "></i>
-                          </a>
-                        <a class="btn btn-danger" href="table.html#">
-                            <i class="fa fa-trash-o "></i>
-                          </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Ari</td>
-                      <td>Graynor</td>
-                      <td>Eva Destruction</td>
-                      <td>
-                        <p>Admin</p>
-                        <p>Coach</p>
-                        <p>Skater</p>
-                      </td>
-                      <td>Eligible</td>
-                      <td>12/20/2017</td>
-                      <td>
-                        <a class="btn btn-info" href="table.html#">
-                            <i class="fa fa-edit "></i>
-                          </a>
-                        <a class="btn btn-danger" href="table.html#">
-                            <i class="fa fa-trash-o "></i>
-                          </a>
                       </td>
                     </tr>
                   </tbody>
@@ -227,10 +55,10 @@
                   </a>
                   </li>
                   <li><a href="#">1</a></li>
-                  <li><a href="#">2</a></li>
+                  <!-- <li><a href="#">2</a></li>
                   <li><a href="#">3</a></li>
                   <li><a href="#">4</a></li>
-                  <li><a href="#">5</a></li>
+                  <li><a href="#">5</a></li> -->
                   <li>
                     <a href="#" aria-label="Next">
                     <span aria-hidden="true">&raquo;</span>
