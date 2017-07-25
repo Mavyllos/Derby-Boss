@@ -94,13 +94,37 @@
                   <h2 align="center">Expiring Insurance</h2><hr>
                   </tr>
                   <tr>
-                    <th>First Name</th>
-                    <th>Last Name</th>
-                    <th>Insurance Expires:</th>
+                    <th>
+                      <a href="#" ng-click="orderByField='first_name'; reverseSort = !reverseSort">
+                          First Name
+                          <span ng-show="orderByField == 'first_name'">
+                              <span ng-show="!reverseSort">^</span>
+                              <span ng-show="reverseSort">v</span>
+                          </span>
+                      </a>
+                    </th>
+                    <th>
+                      <a href="#" ng-click="orderByField='last_name'; reverseSort = !reverseSort">
+                          Last Name
+                          <span ng-show="orderByField == 'last_name'">
+                              <span ng-show="!reverseSort">^</span>
+                              <span ng-show="reverseSort">v</span>
+                          </span>
+                      </a>
+                    </th>
+                    <th>
+                      <a href="#" ng-click="orderByField='expires'; reverseSort = !reverseSort">
+                        Insurance Expires
+                        <span ng-show="orderByField == 'expires'">
+                            <span ng-show="!reverseSort">^</span>
+                            <span ng-show="reverseSort">v</span>
+                        </span>
+                      </a>
+                    </th>
                   </tr>
                 </thead>
   		          <tbody>
-                  <tr ng-repeat="member in $ctrl.members | orderBy: 'expires'">
+                  <tr ng-repeat="member in $ctrl.members | orderBy: orderByField:reverseSort">
                     <td>{{member.first_name}}</td>
                     <td>{{member.last_name}}</td>
                     <td>{{member.expires | date:'MM/dd/yyyy'}}</td>
@@ -121,13 +145,37 @@
                   <h2 align="center">Upcoming Dues</h2><hr>
                   </tr>
                   <tr>
-                    <th>First Name</th>
-                    <th>Last Name</th>
-                    <th>Dues Due On:</th>
+                    <th>
+                      <a href="#" ng-click="orderByField='first_name'; reverseSort = !reverseSort">
+                          First Name
+                          <span ng-show="orderByField == 'first_name'">
+                              <span ng-show="!reverseSort">^</span>
+                              <span ng-show="reverseSort">v</span>
+                          </span>
+                      </a>
+                    </th>
+                    <th>
+                      <a href="#" ng-click="orderByField='last_name'; reverseSort = !reverseSort">
+                          Last Name
+                          <span ng-show="orderByField == 'last_name'">
+                              <span ng-show="!reverseSort">^</span>
+                              <span ng-show="reverseSort">v</span>
+                          </span>
+                      </a>
+                    </th>
+                    <th>
+                      <a href="#" ng-click="orderByField='dues_paid'; reverseSort = !reverseSort">
+                        Dues Paid
+                        <span ng-show="orderByField == 'dues_paid'">
+                            <span ng-show="!reverseSort">^</span>
+                            <span ng-show="reverseSort">v</span>
+                        </span>
+                      </a>
+                    </th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr ng-repeat="member in $ctrl.members | orderBy: 'dues_paid'">
+                  <tr ng-repeat="member in $ctrl.members | orderBy: orderByField:reverseSort">
                     <td>{{member.first_name}}</td>
                     <td>{{member.last_name}}</td>
                     <td>{{member.dues_paid | date:'MM/dd/yyyy'}}</td>

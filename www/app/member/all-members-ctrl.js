@@ -20,7 +20,12 @@
     $http({
       method: 'GET',
       url: 'https://sheltered-river-78388.herokuapp.com/members'
-    }).then(response => vm.members = response.data);
+    }).then(response => {
+      vm.members = response.data;
+      vm.orderByField = response.first_name;
+      vm.reverseSort = false;
+      console.log(response.data);
+    });
     }
   }
 })();
