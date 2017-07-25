@@ -100,25 +100,10 @@
                   </tr>
                 </thead>
   		          <tbody>
-                  <tr>
-                    <td>Juliette</td>
-                    <td>Lewis</td>
-                    <td>12/20/2017</td>
-                  </tr>
-                  <tr>
-                    <td>Ellen</td>
-                    <td>Page</td>
-                    <td>12/20/2017</td>
-                  </tr>
-                  <tr>
-                    <td>Drew</td>
-                    <td>Barrymore</td>
-                    <td>12/20/2017</td>
-                  </tr>
-                  <tr>
-                    <td>Zoe</td>
-                    <td>Bell</td>
-                    <td>12/20/2017</td>
+                  <tr ng-repeat="member in $ctrl.members">
+                    <td>{{member.first_name}}</td>
+                    <td>{{member.last_name}}</td>
+                    <td>{{member.expires | date:'MM/dd/yyyy'}}</td>
                   </tr>
     		        </tbody>
     		      </table>
