@@ -20,8 +20,8 @@
                         <a href="#" ng-click="orderByField='first_name'; reverseSort = !reverseSort">
                             First Name
                             <span ng-show="orderByField == 'first_name'">
-                                <span ng-show="!reverseSort">^</span>
-                                <span ng-show="reverseSort">v</span>
+                              <span ng-show="!reverseSort"><i class="fa fa-sort-asc" aria-hidden="true"></i></span>
+                              <span ng-show="reverseSort"><i class="fa fa-sort-desc" aria-hidden="true"></i></span>
                             </span>
                         </a>
                       </th>
@@ -29,8 +29,8 @@
                         <a href="#" ng-click="orderByField='last_name'; reverseSort = !reverseSort">
                             Last Name
                             <span ng-show="orderByField == 'last_name'">
-                                <span ng-show="!reverseSort">^</span>
-                                <span ng-show="reverseSort">v</span>
+                              <span ng-show="!reverseSort"><i class="fa fa-sort-asc" aria-hidden="true"></i></span>
+                              <span ng-show="reverseSort"><i class="fa fa-sort-desc" aria-hidden="true"></i></span>
                             </span>
                         </a>
                       </th>
@@ -38,18 +38,18 @@
                         <a href="#" ng-click="orderByField='derby_name'; reverseSort = !reverseSort">
                             Derby Name
                             <span ng-show="orderByField == 'derby_name'">
-                                <span ng-show="!reverseSort">^</span>
-                                <span ng-show="reverseSort">v</span>
+                              <span ng-show="!reverseSort"><i class="fa fa-sort-asc" aria-hidden="true"></i></span>
+                              <span ng-show="reverseSort"><i class="fa fa-sort-desc" aria-hidden="true"></i></span>
                             </span>
                         </a>
                       </th>
-                      <!-- <th>Role(s)</th> -->
+                      <th>Role(s)</th>
                       <th>
                         <a href="#" ng-click="orderByField='eligibility'; reverseSort = !reverseSort">
                           Eligible?
                           <span ng-show="orderByField == 'eligibility'">
-                              <span ng-show="!reverseSort">^</span>
-                              <span ng-show="reverseSort">v</span>
+                            <span ng-show="!reverseSort"><i class="fa fa-sort-asc" aria-hidden="true"></i></span>
+                            <span ng-show="reverseSort"><i class="fa fa-sort-desc" aria-hidden="true"></i></span>
                           </span>
                         </a>
                       </th>
@@ -57,8 +57,8 @@
                         <a href="#" ng-click="orderByField='expires'; reverseSort = !reverseSort">
                           Insurance Expires
                           <span ng-show="orderByField == 'expires'">
-                              <span ng-show="!reverseSort">^</span>
-                              <span ng-show="reverseSort">v</span>
+                            <span ng-show="!reverseSort"><i class="fa fa-sort-asc" aria-hidden="true"></i></span>
+                            <span ng-show="reverseSort"><i class="fa fa-sort-desc" aria-hidden="true"></i></span>
                           </span>
                         </a>
                       </th>
@@ -70,17 +70,20 @@
                       <td>{{member.first_name}}</td>
                       <td>{{member.last_name}}</td>
                       <td>{{member.derby_name}}</td>
-                      <!-- <td>
-                        <p>{{member.role}}</p>
-                      </td> -->
+                      <td>
+                        <p>{{member.role.type}}</p>
+                      </td>
                       <th>{{member.eligibility?'Yes':'No'}}</th>
                       <td>{{member.expires | date:'MM/dd/yyyy'}}</td>
                       <td>
-                        <a class="btn btn-info" href="table.html#">
-                      			<i class="fa fa-edit "></i>
+                        <a class="btn btn-primary" ui-sref="viewMember({id: member.id})">
+                      			<i class="fa fa-user"></i>
+                      		</a>
+                        <a class="btn btn-info" ui-sref="editMember({id: member.id})">
+                      			<i class="fa fa-pencil"></i>
                       		</a>
                         <a class="btn btn-danger" href="table.html#">
-                      			<i class="fa fa-trash-o "></i>
+                      			<i class="fa fa-trash-o"></i>
                       		</a>
                       </td>
                     </tr>

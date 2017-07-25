@@ -18,8 +18,8 @@
     function onInit(){
 
     $http({
-      method: 'GET',
-      url: 'https://sheltered-river-78388.herokuapp.com/members'
+      method: 'POST',
+      url: 'https://sheltered-river-78388.herokuapp.com/members/new'
     }).then(response => vm.members = response.data);
     }
   }
