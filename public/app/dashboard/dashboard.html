@@ -95,36 +95,36 @@
                   </tr>
                   <tr>
                     <th>
-                      <a href="#" ng-click="orderByField='first_name'; reverseSort = !reverseSort">
+                      <a href="#" ng-click="orderByFieldExp='first_name'; reverseSortExp = !reverseSortExp">
                           First Name
-                          <span ng-show="orderByField == 'first_name'">
-                            <span ng-show="!reverseSort"><i class="fa fa-sort-asc" aria-hidden="true"></i></span>
-                            <span ng-show="reverseSort"><i class="fa fa-sort-desc" aria-hidden="true"></i></span>
+                          <span ng-show="orderByFieldExp == 'first_name'">
+                            <span ng-show="!reverseSortExp"><i class="fa fa-sort-asc" aria-hidden="true"></i></span>
+                            <span ng-show="reverseSortExp"><i class="fa fa-sort-desc" aria-hidden="true"></i></span>
                           </span>
                       </a>
                     </th>
                     <th>
-                      <a href="#" ng-click="orderByField='last_name'; reverseSort = !reverseSort">
+                      <a href="#" ng-click="orderByFieldExp='last_name'; reverseSortExp = !reverseSortExp">
                           Last Name
-                          <span ng-show="orderByField == 'last_name'">
-                            <span ng-show="!reverseSort"><i class="fa fa-sort-asc" aria-hidden="true"></i></span>
-                            <span ng-show="reverseSort"><i class="fa fa-sort-desc" aria-hidden="true"></i></span>
+                          <span ng-show="orderByFieldExp == 'last_name'">
+                            <span ng-show="!reverseSortExp"><i class="fa fa-sort-asc" aria-hidden="true"></i></span>
+                            <span ng-show="reverseSortExp"><i class="fa fa-sort-desc" aria-hidden="true"></i></span>
                           </span>
                       </a>
                     </th>
                     <th>
-                      <a href="#" ng-click="orderByField='expires'; reverseSort = !reverseSort">
+                      <a href="#" ng-click="orderByFieldExp='expires'; reverseSortExp = !reverseSortExp">
                         Insurance Expires
-                        <span ng-show="orderByField == 'expires'">
-                          <span ng-show="!reverseSort"><i class="fa fa-sort-asc" aria-hidden="true"></i></span>
-                          <span ng-show="reverseSort"><i class="fa fa-sort-desc" aria-hidden="true"></i></span>
+                        <span ng-show="orderByFieldExp == 'expires'">
+                          <span ng-show="!reverseSortExp"><i class="fa fa-sort-asc" aria-hidden="true"></i></span>
+                          <span ng-show="reverseSortExp"><i class="fa fa-sort-desc" aria-hidden="true"></i></span>
                         </span>
                       </a>
                     </th>
                   </tr>
                 </thead>
   		          <tbody>
-                  <tr ng-repeat="member in $ctrl.members | orderBy: orderByField:reverseSort">
+                  <tr ng-repeat="member in $ctrl.members | orderBy: orderByFieldExp:reverseSortExp">
                     <td>{{member.first_name}}</td>
                     <td>{{member.last_name}}</td>
                     <td>{{member.expires | date:'MM/dd/yyyy'}}</td>
@@ -146,36 +146,36 @@
                   </tr>
                   <tr>
                     <th>
-                      <a href="#" ng-click="orderByField='first_name'; reverseSort = !reverseSort">
+                      <a href="#" ng-click="orderByFieldDues='first_name'; reverseSortDues = !reverseSortDues">
                           First Name
-                          <span ng-show="orderByField == 'first_name'">
-                            <span ng-show="!reverseSort"><i class="fa fa-sort-asc" aria-hidden="true"></i></span>
-                            <span ng-show="reverseSort"><i class="fa fa-sort-desc" aria-hidden="true"></i></span>
+                          <span ng-show="orderByFieldDues == 'first_name'">
+                            <span ng-show="!reverseSortDues"><i class="fa fa-sort-asc" aria-hidden="true"></i></span>
+                            <span ng-show="reverseSortDues"><i class="fa fa-sort-desc" aria-hidden="true"></i></span>
                           </span>
                       </a>
                     </th>
                     <th>
-                      <a href="#" ng-click="orderByField='last_name'; reverseSort = !reverseSort">
+                      <a href="#" ng-click="orderByFieldDues='last_name'; reverseSortDues = !reverseSortDues">
                           Last Name
-                          <span ng-show="orderByField == 'last_name'">
-                            <span ng-show="!reverseSort"><i class="fa fa-sort-asc" aria-hidden="true"></i></span>
-                            <span ng-show="reverseSort"><i class="fa fa-sort-desc" aria-hidden="true"></i></span>
+                          <span ng-show="orderByFieldDues == 'last_name'">
+                            <span ng-show="!reverseSortDues"><i class="fa fa-sort-asc" aria-hidden="true"></i></span>
+                            <span ng-show="reverseSortDues"><i class="fa fa-sort-desc" aria-hidden="true"></i></span>
                           </span>
                       </a>
                     </th>
                     <th>
-                      <a href="#" ng-click="orderByField='dues_paid'; reverseSort = !reverseSort">
+                      <a href="#" ng-click="orderByFieldDues='dues_paid'; reverseSortDues = !reverseSortDues">
                         Dues Paid
-                        <span ng-show="orderByField == 'dues_paid'">
-                            <span ng-show="!reverseSort"><i class="fa fa-sort-asc" aria-hidden="true"></i></span>
-                            <span ng-show="reverseSort"><i class="fa fa-sort-desc" aria-hidden="true"></i></span>
+                        <span ng-show="orderByFieldDues == 'dues_paid'">
+                            <span ng-show="!reverseSortDues"><i class="fa fa-sort-asc" aria-hidden="true"></i></span>
+                            <span ng-show="reverseSortDues"><i class="fa fa-sort-desc" aria-hidden="true"></i></span>
                         </span>
                       </a>
                     </th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr ng-repeat="member in $ctrl.members | orderBy: orderByField:reverseSort">
+                  <tr ng-repeat="member in $ctrl.members | orderBy: orderByFieldDues:reverseSortDues">
                     <td>{{member.first_name}}</td>
                     <td>{{member.last_name}}</td>
                     <td>{{member.dues_paid | date:'MM/dd/yyyy'}}</td>

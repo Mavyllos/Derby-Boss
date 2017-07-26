@@ -22,8 +22,10 @@
         url: 'https://sheltered-river-78388.herokuapp.com/members'
       }).then(response => {
         vm.members = response.data;
-        vm.orderByField = response.first_name;
-        vm.reverseSort = false;
+        vm.orderByFieldDues = response.first_name;
+        vm.orderByFieldExp = response.first_name;
+        vm.reverseSortDues = false;
+        vm.reverseSortExp = false;
         // vm.duesDate = response.dues_paid;
         //
         // duesDate = new Date();
