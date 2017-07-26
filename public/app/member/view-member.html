@@ -9,7 +9,7 @@
         <div class="panel-heading profile-header">
           <h2 class="panel-title">
               <h4><b>{{member.first_name}} "{{member.derby_name}}" {{member.last_name}}</b>
-              <a href="/edit-member" class="show-a">Edit Profile  &nbsp;<i class="fa fa-pencil"></i></a>
+              <a ui-sref="editMember({id: member.member_id})" class="show-a">Edit Profile  &nbsp;<i class="fa fa-pencil"></i></a>
               </h4>
           </h2>
         </div>
@@ -18,7 +18,7 @@
 
           <!-- Profile Image -->
             <div class="col-md-3 col-lg-3 " align="center">
-              <img alt="User Pic" src="{{member.profile_img}}" class="img-thumbnail img-responsive">
+              <img alt="thumbnail" src="{{member.profile_img}}" class="img-thumbnail img-responsive">
             </div>
 
             <!-- Contact Information -->
@@ -45,7 +45,7 @@
                     </tr>
                     <tr>
                       <td>Phone Number:</td>
-                      <td>{{member.phone}}</td>
+                      <td>{{member.phone | tel}}</td>
                     </tr>
                     <tr>
                       <td>Home Address:</td>

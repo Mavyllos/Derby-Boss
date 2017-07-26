@@ -52,7 +52,7 @@ function config($stateProvider, $urlRouterProvider, $locationProvider) {
     })
     .state({
       name: 'editMember',
-      url: '/edit-member',
+      url: '/edit-member/{id}',
       component: "editMember"
     })
     .state({
